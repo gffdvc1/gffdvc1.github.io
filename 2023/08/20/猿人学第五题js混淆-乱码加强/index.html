@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>猿人学第五题js混淆-乱码加强 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="&amp;copy;&amp;copy;&amp;copy;&amp;copy;直通网址。第五题需要请求到5页直播间数据，然后计算排行前5名的热度之和，这里需要看清楚题目，当时自己写的时候粗心，以为是算全部热度之和。 分析网站&amp;copy;&amp;copy;分析网站发现请求参数有m和f，感觉像是时间戳，之后在看请求头，发现cookies中存在m与RM4hZBv0dDon443M值是变化的，可能就是需要你要逆向的加密参数。 hookcoo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="猿人学第五题js混淆-乱码加强">
+<meta property="og:url" content="http://example.com/2023/08/20/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E4%BA%94%E9%A2%98js%E6%B7%B7%E6%B7%86-%E4%B9%B1%E7%A0%81%E5%8A%A0%E5%BC%BA/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="&amp;copy;&amp;copy;&amp;copy;&amp;copy;直通网址。第五题需要请求到5页直播间数据，然后计算排行前5名的热度之和，这里需要看清楚题目，当时自己写的时候粗心，以为是算全部热度之和。 分析网站&amp;copy;&amp;copy;分析网站发现请求参数有m和f，感觉像是时间戳，之后在看请求头，发现cookies中存在m与RM4hZBv0dDon443M值是变化的，可能就是需要你要逆向的加密参数。 hookcoo">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2023/08/20/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E4%BA%94%E9%A2%98js%E6%B7%B7%E6%B7%86-%E4%B9%B1%E7%A0%81%E5%8A%A0%E5%BC%BA/img/hook_m.png">
+<meta property="og:image" content="d:\blog\blog1\source\_posts\img\RM4hZBv0dDon443M.png">
+<meta property="og:image" content="http://example.com/2023/08/20/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E4%BA%94%E9%A2%98js%E6%B7%B7%E6%B7%86-%E4%B9%B1%E7%A0%81%E5%8A%A0%E5%BC%BA/img/RM4hZBv0dDon443M.png">
+<meta property="article:published_time" content="2023-08-20T05:54:28.000Z">
+<meta property="article:modified_time" content="2023-08-20T08:20:22.513Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/08/20/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E4%BA%94%E9%A2%98js%E6%B7%B7%E6%B7%86-%E4%B9%B1%E7%A0%81%E5%8A%A0%E5%BC%BA/img/hook_m.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-猿人学第五题js混淆-乱码加强" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/08/20/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E4%BA%94%E9%A2%98js%E6%B7%B7%E6%B7%86-%E4%B9%B1%E7%A0%81%E5%8A%A0%E5%BC%BA/" class="article-date">
+  <time class="dt-published" datetime="2023-08-20T05:54:28.000Z" itemprop="datePublished">2023-08-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      猿人学第五题js混淆-乱码加强
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>&copy;&copy;&copy;&copy;<a target="_blank" rel="noopener" href="https://match.yuanrenxue.cn/match/5">直通网址</a>。<br>第五题需要请求到5页直播间数据，然后计算排行前5名的热度之和，这里需要看清楚题目，当时自己写的时候粗心，以为是算全部热度之和。</p>
+<h1 id="分析网站"><a href="#分析网站" class="headerlink" title="分析网站"></a>分析网站</h1><p>&copy;&copy;分析网站发现请求参数有m和f，感觉像是时间戳，之后在看请求头，发现cookies中存在m与RM4hZBv0dDon443M值是变化的，可能就是需要你要逆向的加密参数。</p>
+<h1 id="hookcookies中的m"><a href="#hookcookies中的m" class="headerlink" title="hookcookies中的m"></a>hookcookies中的m</h1><p>hook代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(function () &#123;</span><br><span class="line">    var val = &quot;&quot;;</span><br><span class="line">    Object.defineProperty(document, &quot;cookie&quot;, &#123;</span><br><span class="line">        set(v) &#123;</span><br><span class="line">            debugger;</span><br><span class="line">            val = v;</span><br><span class="line">        &#125;, get() &#123;</span><br><span class="line">            return val;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
+
+<p>首先点击application，删除当前网站上保存的cookies信息，然后打开script脚本选项，将网站在发送请求的时候能够停在第一句js代码，之后将hook代码注入，取消script，点击暂停键，hook到m的值，如图<img src='img/hook_m.png' ><img>,在调用站中点击前一个调用站，拿到生成m的加密入口，调试停在了_0x474032函数上，,m的加密方法就可以扣js代码来实现。</p>
+<h1 id="hookcookies中的m-1"><a href="#hookcookies中的m-1" class="headerlink" title="hookcookies中的m"></a>hookcookies中的m</h1><p>使用同样是方法hook-RM4hZBv0dDon443M的值，找到加密位置，如图<br><img src='D:\blog\blog1\source\_posts\img\RM4hZBv0dDon443M.png' ><img><br>发现是将window对象中_$ss参数进行加密，然后再当前页面中搜索_$ss，发现只有加密入口这一个位置存在，当时自己写的时候，也疑惑了一会，甚至在看代码，直到看到了如下代码，感觉有点不一样，最后尝试输出了’_$’ + _$UH[0x348][0x1] + <em>$UH[0x353][0x1]后发现拼接之后就是</em>$ss值，给自己了一个提醒，如果找不到对象的时候可以试着分开来辨别。</p>
+<p>然后就是分析这段代码，使用控制台还原代码，结果如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">_$Ww = _$Tk[&quot;enc&quot;][&quot;Utf8&quot;][&quot;parse&quot;](_0x4e96b4[&#x27;_$pr&#x27;][&quot;toString&quot;]()),</span><br><span class="line">        _0x4e96b4[&#x27;_$qF&#x27;] = _$Tk[&#x27;enc&#x27;][&#x27;Utf8&#x27;][&quot;parse&quot;](btoa(_0x4e96b4[&#x27;_$is&#x27;])[&#x27;slice&#x27;](0x0, 0x10));</span><br><span class="line">    _0x29dd83 = _$Tk[&#x27;AES&#x27;][&quot;encrypt&quot;](_$Ww, _0x4e96b4[&quot;_$qF&quot;], &#123;</span><br><span class="line">                                        &#x27;mode&#x27;: _$Tk[&quot;mode&quot;][&quot;ECB&quot;],</span><br><span class="line">                                        &#x27;padding&#x27;: _$Tk[&quot;pad&quot;][&quot;Pkcs7&quot;]</span><br><span class="line">                                    &#125;),</span><br><span class="line">    RM4hZBv0dDon443M = _0x29dd83[&quot;toString&quot;]();</span><br></pre></td></tr></table></figure>
+<p>很容易的看出RM4hZBv0dDon443M的加密方法是AES加密，秘钥是_0x4e96b4[‘<em>$is’]值选取16位通过btoa得到的，加密字符串是_0x4e96b4[‘</em>$pr’]对象转换成字符串之后的结果，<em>0x4e96b4[‘</em>$pr’]对象是一个列表其中存在5个值，在页面中搜索_0x4e96b4[‘_$pr’]几个结果都是当前对象使用的push方法，大胆猜测这是一个列表，对搜索到的位置添加断点，发现在1717代码位置执行了4次，最后跳到</p>
+<p>868代码位置执行了次，那么，<em>0x4e96b4[‘</em>$pr’]对象也就知道了。这里需要注意的是数组在添加最后一个值的时候，使用的是_0x4e96b4[‘<em>$is’]，所以m的加密结果与_0x4e96b4[‘</em>$pr’]最后一个值应该是一样的。</p>
+<p>加密部分分析之后，还有请求参数需要解决，猿人学网站的习惯是将参数的设置直接写到html中，这样就直接在调用站的面板上找到requests，然后点击，在源面板中ctrl+f搜索m或者是f，发现m是window对象的_$is的值，在实现m与RM4hZBv0dDon443M值解密的时候，你就会发现有这样一句<br><em>0x4e96b4[‘</em>$is’] &#x3D; _$yw;</p>
+<p>而_$yw的值加密之后赋值给了m，f的值是window.$_zw[23],这就需要分析这个值是来的，在搜索框中搜索$_zw，结果如图所示<br><img src='img\RM4hZBv0dDon443M.png' ><img>,有很多push代码，然后设置断点找到下表为23的push位置，发现通过添加$_t1实现，而$_t1是时间戳。</p>
+<h1 id="总结加密逻辑"><a href="#总结加密逻辑" class="headerlink" title="总结加密逻辑"></a>总结加密逻辑</h1><p>定义一个列表用于存储5次加密数据，前四次加密方发都是通过创建时间对象，使用Date.parse()方法将描述去掉，使用_0x474032函数实现加密之后添加到列表中，然后再创建一个时间戳，这个时间戳就是window._$is的值，使用_0x474032加密之后赋值给m，在添加到列表中的，最后使用AES对列表形成的字符串完成最后的加密操作。</p>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><p>py代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">import requests,execjs</span><br><span class="line">def get_json(url, params,data):</span><br><span class="line">    headers = &#123;&quot;User-Agent&quot;: &quot;yuanrenxue.project&quot;&#125;</span><br><span class="line">    cookie = &#123;&quot;sessionid&quot;: &quot;fegp0c1soa41kquu0jiizqebncogd8l3&quot;,</span><br><span class="line">              &quot;m&quot;: data[&#x27;cookies_m&#x27;],</span><br><span class="line">              &quot;RM4hZBv0dDon443M&quot;: data[&quot;RM4hZBv0dDon443M&quot;]&#125;</span><br><span class="line">    res = requests.get(url, headers=headers, params=params, cookies=cookie)</span><br><span class="line">    print(res)</span><br><span class="line">    values = res.json()[&#x27;data&#x27;]</span><br><span class="line">    return values</span><br><span class="line"></span><br><span class="line">val = []</span><br><span class="line">js = execjs.compile(open(&#x27;test.js&#x27;, &#x27;r&#x27;, encoding=&#x27;utf-8&#x27;).read())</span><br><span class="line">data = js.call(&#x27;main&#x27;)</span><br><span class="line">for page in range(1,6):</span><br><span class="line">    params = &#123;&#x27;page&#x27;: page,</span><br><span class="line">              &quot;m&quot;: data[&#x27;can_m&#x27;],</span><br><span class="line">              &quot;f&quot;: data[&#x27;f&#x27;]&#125;</span><br><span class="line">    url = &#x27;https://match.yuanrenxue.cn/api/match/5&#x27;</span><br><span class="line">    values = get_json(url, params, data)</span><br><span class="line">    for j in values:</span><br><span class="line">        val.append(j[&#x27;value&#x27;])</span><br><span class="line"></span><br><span class="line">val.sort(reverse=True)</span><br><span class="line">sum = 0</span><br><span class="line">for i in val[:5]:</span><br><span class="line">    sum += i</span><br><span class="line">print(sum)</span><br></pre></td></tr></table></figure>
+
+<p>js代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br></pre></td><td class="code"><pre><span class="line">var _0x4e96b4 = global;</span><br><span class="line"></span><br><span class="line">function _0x32032f(_0x520fdf, _0x13921d, _0x1af9d5, _0x4a2311, _0xb6d40a, _0x1d58da, _0x361df0) &#123;</span><br><span class="line">    return _0xaaef84(_0x13921d ^ _0x1af9d5 ^ _0x4a2311, _0x520fdf, _0x13921d, _0xb6d40a, _0x1d58da, _0x361df0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x3180ec(_0x401705, _0x240e6a, _0x56b131, _0x5a5c20, _0x1f2a72, _0x2bfc1, _0x19741a) &#123;</span><br><span class="line">    return _0xaaef84(_0x240e6a &amp; _0x5a5c20 | _0x56b131 &amp; ~_0x5a5c20, _0x401705, _0x240e6a, _0x1f2a72, _0x2bfc1, _0x19741a);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x12e4a8(_0x7542c8, _0x5eada0) &#123;</span><br><span class="line">    var _0x41f81f = (0xffff &amp; _0x7542c8) + (0xffff &amp; _0x5eada0);</span><br><span class="line">    return (_0x7542c8 &gt;&gt; 0x10) + (_0x5eada0 &gt;&gt; 0x10) + (_0x41f81f &gt;&gt; 0x10) &lt;&lt; 0x10 | 0xffff &amp; _0x41f81f;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x4b459d(_0x8d8f2a, _0x406d34, _0x53e7d7, _0x26c827, _0xec41ea, _0x52dead, _0x3f66e7) &#123;</span><br><span class="line">    return _0xaaef84(_0x53e7d7 ^ (_0x406d34 | ~_0x26c827), _0x8d8f2a, _0x406d34, _0xec41ea, _0x52dead, _0x3f66e7);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x3634fc(_0x5803ba, _0x1ce5b2) &#123;</span><br><span class="line">    return _0x5803ba &lt;&lt; _0x1ce5b2 | _0x5803ba &gt;&gt;&gt; 0x20 - _0x1ce5b2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0xaaef84(_0xaf3112, _0x2a165a, _0x532fb4, _0x10aa40, _0x41c4e7, _0x1cb4da) &#123;</span><br><span class="line">    return _0x12e4a8(_0x3634fc(_0x12e4a8(_0x12e4a8(_0x2a165a, _0xaf3112), _0x12e4a8(_0x10aa40, _0x1cb4da)), _0x41c4e7), _0x532fb4);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x48d200(_0x4b706e, _0x3c3a85, _0x111154, _0x311f9f, _0x5439cf, _0x38cac7, _0x26bd2e) &#123;</span><br><span class="line">    return _0xaaef84(_0x3c3a85 &amp; _0x111154 | ~_0x3c3a85 &amp; _0x311f9f, _0x4b706e, _0x3c3a85, _0x5439cf, _0x38cac7, _0x26bd2e);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x12b47d(_0x149183) &#123;</span><br><span class="line">    var _0xabbcb3, _0x1145c3 = &#x27;&#x27;, _0x4fce58 = 0x20 * _0x149183[&quot;length&quot;];</span><br><span class="line">    for (_0xabbcb3 = 0x0; _0xabbcb3 &lt; _0x4fce58; _0xabbcb3 += 0x8)</span><br><span class="line">        _0x1145c3 += String[&quot;fromCharCode&quot;](_0x149183[_0xabbcb3 &gt;&gt; 0x5] &gt;&gt;&gt; _0xabbcb3 % 0x20 &amp; 0xff);</span><br><span class="line">    return _0x1145c3;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x35f5f2(_0x243853) &#123;</span><br><span class="line">    var _0x139b8b, _0xa791a1 = [];</span><br><span class="line">    for (_0xa791a1[(_0x243853[&quot;length&quot;] &gt;&gt; 0x2) - 0x1] = void 0x0,</span><br><span class="line">             _0x139b8b = 0x0; _0x139b8b &lt; _0xa791a1[&quot;length&quot;]; _0x139b8b += 0x1)</span><br><span class="line">        _0xa791a1[_0x139b8b] = 0x0;</span><br><span class="line">    var _0x41a533 = 0x8 * _0x243853[&quot;length&quot;];</span><br><span class="line">    for (_0x139b8b = 0x0; _0x139b8b &lt; _0x41a533; _0x139b8b += 0x8)</span><br><span class="line">        _0xa791a1[_0x139b8b &gt;&gt; 0x5] |= (0xff &amp; _0x243853[&quot;charCodeAt&quot;](_0x139b8b / 0x8)) &lt;&lt; _0x139b8b % 0x20;</span><br><span class="line">    return _0xa791a1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var _0x1171c8 = 0x67452301;</span><br><span class="line">var _0x4dae05 = -0x10325477;</span><br><span class="line">var _0x183a1d = -0x67452302;</span><br><span class="line">var _0xcfa373 = 0x10325476;</span><br><span class="line"></span><br><span class="line">function _0x11a7a2(_0x193f00, _0x1cfe89) &#123;</span><br><span class="line">    _0x193f00[_0x1cfe89 &gt;&gt; 0x5] |= 0x80 &lt;&lt; _0x1cfe89 % 0x20,</span><br><span class="line">        _0x193f00[0xe + (_0x1cfe89 + 0x40 &gt;&gt;&gt; 0x9 &lt;&lt; 0x4)] = _0x1cfe89;</span><br><span class="line">    var _0x42fb36 = 16;</span><br><span class="line">    op = 27;</span><br><span class="line">    b64pad = 1;</span><br><span class="line">    var _0x1badc3, _0x38ca59, _0x431764, _0x43f1b4, _0x5722c0, _0x3e0c38 = _0x1171c8, _0xdb4d2c = _0x4dae05,</span><br><span class="line">        _0x1724c5 = _0x183a1d, _0x257ec6 = _0xcfa373;</span><br><span class="line"></span><br><span class="line">    _0x4e96b4[&#x27;_$6_&#x27;] = -389564586;</span><br><span class="line">    _0x4e96b4[&#x27;_$Jy&#x27;] = -405537848;</span><br><span class="line">    _0x4e96b4[&#x27;_$tT&#x27;] = -660478335;</span><br><span class="line"></span><br><span class="line">    for (_0x1badc3 = 0x0; _0x1badc3 &lt; _0x193f00[&#x27;length&#x27;]; _0x1badc3 += _0x42fb36)</span><br><span class="line">        _0x38ca59 = _0x3e0c38,</span><br><span class="line">            _0x431764 = _0xdb4d2c,</span><br><span class="line">            _0x43f1b4 = _0x1724c5,</span><br><span class="line">            _0x5722c0 = _0x257ec6,</span><br><span class="line">            _0x3e0c38 = _0x48d200(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3], 0x7, 0x7d60c),</span><br><span class="line">            _0x257ec6 = _0x48d200(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x1], 0xc, _0x4e96b4[&#x27;_$6_&#x27;]),</span><br><span class="line">            _0x1724c5 = _0x48d200(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x2], 0x11, 0x242070db),</span><br><span class="line">            _0xdb4d2c = _0x48d200(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x3], 0x16, -0x3e423112),</span><br><span class="line">            _0x3e0c38 = _0x48d200(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x4], 0x7, -0xa83f051),</span><br><span class="line">            _0x257ec6 = _0x48d200(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x5], 0xc, 0x4787c62a),</span><br><span class="line">            _0x1724c5 = _0x48d200(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x6], 0x11, -0x57cfb9ed),</span><br><span class="line">            _0xdb4d2c = _0x48d200(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x7], 0x16, -0x2b96aff),</span><br><span class="line">            _0x3e0c38 = _0x48d200(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x8], 0x7, 0x698098d8),</span><br><span class="line">            _0x257ec6 = _0x48d200(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x9], 0xc, -0x74bb0851),</span><br><span class="line">            _0x1724c5 = _0x48d200(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xa], 0x11, -0xa44f),</span><br><span class="line">            _0xdb4d2c = _0x48d200(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0xb], 0x16, -0x76a32842),</span><br><span class="line">            _0x3e0c38 = _0x48d200(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0xc], 0x7, 0x6b901122),</span><br><span class="line">            _0x257ec6 = _0x48d200(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0xd], 0xc, -0x2678e6d),</span><br><span class="line">            _0x1724c5 = _0x48d200(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xe], 0x11, -0x5986bc72),</span><br><span class="line">            _0xdb4d2c = _0x48d200(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0xf], 0x16, 0x49b40821),</span><br><span class="line">            _0x3e0c38 = _0x3180ec(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x1], 0x5, -0x9e1da9e),</span><br><span class="line">            _0x257ec6 = _0x3180ec(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x6], 0x9, -0x3fbf4cc0),</span><br><span class="line">            _0x1724c5 = _0x3180ec(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xb], 0xe, 0x265e5a51),</span><br><span class="line">            _0xdb4d2c = _0x3180ec(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3], 0x14, -0x16493856),</span><br><span class="line">            _0x3e0c38 = _0x3180ec(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x5], 0x5, -0x29d0efa3),</span><br><span class="line">            _0x257ec6 = _0x3180ec(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0xa], 0x9, 0x2441453),</span><br><span class="line">            _0x1724c5 = _0x3180ec(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xf], 0xe, _0x4e96b4[&#x27;_$tT&#x27;]),</span><br><span class="line">            _0xdb4d2c = _0x3180ec(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x4], 0x14, _0x4e96b4[&#x27;_$Jy&#x27;]),</span><br><span class="line">            _0x3e0c38 = _0x3180ec(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x9], 0x5, 0x21e1cde6),</span><br><span class="line">            _0x257ec6 = _0x3180ec(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0xe], 0x9, -0x3cc8aa0a),</span><br><span class="line">            _0x1724c5 = _0x3180ec(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x3], 0xe, -0xb2af279),</span><br><span class="line">            _0xdb4d2c = _0x3180ec(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x8], 0x14, 0x455a14ed),</span><br><span class="line">            _0x3e0c38 = _0x3180ec(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0xd], 0x5, -0x5caa8e7b),</span><br><span class="line">            _0x257ec6 = _0x3180ec(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x2], 0x9, -0x3105c08),</span><br><span class="line">            _0x1724c5 = _0x3180ec(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x7], 0xe, 0x676f02d9),</span><br><span class="line">            _0xdb4d2c = _0x3180ec(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0xc], 0x14, -0x72d5b376),</span><br><span class="line">            _0x3e0c38 = _0x32032f(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x5], 0x4, -0x241282e),</span><br><span class="line">            _0x257ec6 = _0x32032f(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x8], 0xb, -0x788e097f),</span><br><span class="line">            _0x1724c5 = _0x32032f(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xb], 0x10, 0x6d9d6122),</span><br><span class="line">            _0xdb4d2c = _0x32032f(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0xe], 0x17, -0x21ac7f4),</span><br><span class="line">            _0x3e0c38 = _0x32032f(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x1], 0x4, -0x5b4115bc * b64pad),</span><br><span class="line">            _0x257ec6 = _0x32032f(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x4], 0xb, 0x4bdecfa9),</span><br><span class="line">            _0x1724c5 = _0x32032f(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x7], 0x10, -0x944b4a0),</span><br><span class="line">            _0xdb4d2c = _0x32032f(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0xa], 0x17, -0x41404390),</span><br><span class="line">            _0x3e0c38 = _0x32032f(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0xd], 0x4, 0x289b7ec6),</span><br><span class="line">            _0x257ec6 = _0x32032f(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3], 0xb, -0x155ed806),</span><br><span class="line">            _0x1724c5 = _0x32032f(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x3], 0x10, -0x2b10cf7b),</span><br><span class="line">            _0xdb4d2c = _0x32032f(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x6], 0x17, 0x2d511fd9),</span><br><span class="line">            _0x3e0c38 = _0x32032f(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x9], 0x4, -0x3d12017),</span><br><span class="line">            _0x257ec6 = _0x32032f(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0xc], 0xb, -0x1924661b),</span><br><span class="line">            _0x1724c5 = _0x32032f(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xf], 0x10, 0x1fa27cf8),</span><br><span class="line">            _0xdb4d2c = _0x32032f(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x2], 0x17, -0x3b53a99b),</span><br><span class="line">            _0x3e0c38 = _0x4b459d(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3], 0x6, -0xbd6ddbc),</span><br><span class="line">            _0x257ec6 = _0x4b459d(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x7], 0xa, 0x432aff97),</span><br><span class="line">            _0x1724c5 = _0x4b459d(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xe], 0xf, -0x546bdc59),</span><br><span class="line">            _0xdb4d2c = _0x4b459d(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x5], 0x15, -0x36c5fc7),</span><br><span class="line">            _0x3e0c38 = _0x4b459d(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0xc], 0x6, 0x655b59c3),</span><br><span class="line">            _0x257ec6 = _0x4b459d(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0x3], 0xa, -0x70ef89ee),</span><br><span class="line">            _0x1724c5 = _0x4b459d(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0xa], 0xf, -0x644f153),</span><br><span class="line">            _0xdb4d2c = _0x4b459d(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x1], 0x15, -0x7a7ba22f),</span><br><span class="line">            _0x3e0c38 = _0x4b459d(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x8], 0x6, 0x6fa87e4f),</span><br><span class="line">            _0x257ec6 = _0x4b459d(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0xf], 0xa, -0x1d31920),</span><br><span class="line">            _0x1724c5 = _0x4b459d(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x6], 0xf, -0x5cfebcec),</span><br><span class="line">            _0xdb4d2c = _0x4b459d(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0xd], 0x15, 0x4e0811a1),</span><br><span class="line">            _0x3e0c38 = _0x4b459d(_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6, _0x193f00[_0x1badc3 + 0x4], 0x6, -0x8ac817e),</span><br><span class="line">            _0x257ec6 = _0x4b459d(_0x257ec6, _0x3e0c38, _0xdb4d2c, _0x1724c5, _0x193f00[_0x1badc3 + 0xb], 0xa, -1120211379),</span><br><span class="line">            _0x1724c5 = _0x4b459d(_0x1724c5, _0x257ec6, _0x3e0c38, _0xdb4d2c, _0x193f00[_0x1badc3 + 0x2], 0xf, 0x2ad7d2bb),</span><br><span class="line">            _0xdb4d2c = _0x4b459d(_0xdb4d2c, _0x1724c5, _0x257ec6, _0x3e0c38, _0x193f00[_0x1badc3 + 0x9], 0x15, -0x14792c01),</span><br><span class="line">            _0x3e0c38 = _0x12e4a8(_0x3e0c38, _0x38ca59),</span><br><span class="line">            _0xdb4d2c = _0x12e4a8(_0xdb4d2c, _0x431764),</span><br><span class="line">            _0x1724c5 = _0x12e4a8(_0x1724c5, _0x43f1b4),</span><br><span class="line">            _0x257ec6 = _0x12e4a8(_0x257ec6, _0x5722c0);</span><br><span class="line">    return [_0x3e0c38, _0xdb4d2c, _0x1724c5, _0x257ec6];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x1ee7ec(_0x206333) &#123;</span><br><span class="line">    return _0x12b47d(_0x11a7a2(_0x35f5f2(_0x206333), 0x8 * _0x206333[&quot;length&quot;]));</span><br><span class="line">&#125;</span><br><span class="line">console.log(_0x11a7a2(_0x35f5f2(1692499226472), 0x8 * 1692499226472[&quot;length&quot;]))</span><br><span class="line">function _0x2b8a17(_0x36f847) &#123;</span><br><span class="line">    return unescape(encodeURIComponent(_0x36f847));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x41873d(_0x5a6962) &#123;</span><br><span class="line">    return _0x1ee7ec(_0x2b8a17(_0x5a6962));</span><br><span class="line">&#125;</span><br><span class="line">function _0x499969(_0x82fe7e) &#123;</span><br><span class="line">    var _0x5bdda4, _0x322a73, _0xd0b5cd = &#x27;0123456789abcdef&#x27;, _0x21f411 = &#x27;&#x27;;</span><br><span class="line">    for (_0x322a73 = 0x0; _0x322a73 &lt; _0x82fe7e[&quot;length&quot;]; _0x322a73 += 0x1)</span><br><span class="line">        _0x5bdda4 = _0x82fe7e[&quot;charCodeAt&quot;](_0x322a73),</span><br><span class="line">            _0x21f411 += _0xd0b5cd[&#x27;charAt&#x27;](_0x5bdda4 &gt;&gt;&gt; 0x4 &amp; 0xf) + _0xd0b5cd[&#x27;charAt&#x27;](0xf &amp; _0x5bdda4);</span><br><span class="line">    return _0x21f411;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x37614a(_0x32e7c1) &#123;</span><br><span class="line">    return _0x499969(_0x41873d(_0x32e7c1));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x474032(_0x233f82, _0xe2ed33, _0x3229f9) &#123;</span><br><span class="line">    return _0xe2ed33 ? _0x3229f9 ? v(_0xe2ed33, _0x233f82) : y(_0xe2ed33, _0x233f82) : _0x3229f9 ? _0x41873d(_0x233f82) : _0x37614a(_0x233f82);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function _0x2d5f5b() &#123;</span><br><span class="line">    return new Date()[&#x27;valueOf&#x27;]();</span><br><span class="line">&#125;</span><br><span class="line">function _0x12eaf3() &#123;</span><br><span class="line">    return Date[&#x27;parse&#x27;](new Date());</span><br><span class="line">&#125;</span><br><span class="line">var _$Tk = require(&#x27;crypto-js&#x27;)</span><br><span class="line"></span><br><span class="line">function main()&#123;</span><br><span class="line">    var m,f = Date.parse(new Date()),t;</span><br><span class="line">    _0x4e96b4[&#x27;_$pr&#x27;] = [];</span><br><span class="line">    for (var i=0;i&lt;4;i++)&#123;</span><br><span class="line">        t = _0x12eaf3();</span><br><span class="line">        _0x4e96b4[&#x27;_$pr&#x27;][&#x27;push&#x27;](_0x474032(t));</span><br><span class="line">    &#125;</span><br><span class="line">    var _$yw = _0x2d5f5b()[&quot;toString&quot;]();//参数m</span><br><span class="line">    m = _0x474032(_$yw);//加密后的参数吗作为cookies中吗的值</span><br><span class="line">    _0x4e96b4[&#x27;_$is&#x27;] = _$yw;</span><br><span class="line">    _0x4e96b4[&#x27;_$pr&#x27;][&#x27;push&#x27;](m);//最后一个参数与cookies中的吗值一样</span><br><span class="line">    _$Ww = _$Tk[&quot;enc&quot;][&quot;Utf8&quot;][&quot;parse&quot;](_0x4e96b4[&#x27;_$pr&#x27;][&quot;toString&quot;]()),</span><br><span class="line">        _0x4e96b4[&#x27;_$qF&#x27;] = _$Tk[&#x27;enc&#x27;][&#x27;Utf8&#x27;][&quot;parse&quot;](btoa(_0x4e96b4[&#x27;_$is&#x27;])[&#x27;slice&#x27;](0x0, 0x10));</span><br><span class="line">    _0x29dd83 = _$Tk[&#x27;AES&#x27;][&quot;encrypt&quot;](_$Ww, _0x4e96b4[&quot;_$qF&quot;], &#123;</span><br><span class="line">                                        &#x27;mode&#x27;: _$Tk[&quot;mode&quot;][&quot;ECB&quot;],</span><br><span class="line">                                        &#x27;padding&#x27;: _$Tk[&quot;pad&quot;][&quot;Pkcs7&quot;]</span><br><span class="line">                                    &#125;),</span><br><span class="line">    RM4hZBv0dDon443M = _0x29dd83[&quot;toString&quot;]();</span><br><span class="line">    return &#123;&quot;can_m&quot;: _$yw,</span><br><span class="line">            &quot;f&quot;: f.toString(),</span><br><span class="line">            &quot;cookies_m&quot;: m,</span><br><span class="line">            &quot;RM4hZBv0dDon443M&quot;: RM4hZBv0dDon443M&#125;</span><br><span class="line">&#125;</span><br><span class="line">//console.log(main())</span><br><span class="line">// 前4个来自_$Wa = _0x12eaf3();</span><br><span class="line">//                                     _0x3d0f3f[_$Fe] = &#x27;m=&#x27; + _0x474032(_$Wa) + &#x27;;\x20path=/&#x27;;</span><br><span class="line">//                                     _0x4e96b4[&#x27;_$pr&#x27;][&#x27;push&#x27;](_0x474032(_$Wa));</span><br><span class="line">//  第5个来自是m的加密参数也是最后一个      _$yw = _0x2d5f5b()[_$UH[0x1f]]();</span><br><span class="line">//                                     _0x3d0f3f[_$Fe] = &#x27;m=&#x27; + _0x474032(_$yw) + &#x27;;\x20path=/&#x27;;</span><br><span class="line">//                                     _0x4e96b4[&#x27;_$is&#x27;] = _$yw;</span><br><span class="line">//</span><br><span class="line">//                                     _0x4e96b4[&#x27;_$pr&#x27;][&#x27;push&#x27;](_0x474032(_$yw));</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/08/20/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E4%BA%94%E9%A2%98js%E6%B7%B7%E6%B7%86-%E4%B9%B1%E7%A0%81%E5%8A%A0%E5%BC%BA/" data-id="clmn55i6l000ay8pn9nh07pwq" data-title="猿人学第五题js混淆-乱码加强" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/08/21/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E5%85%AD%E9%A2%98js%E6%B7%B7%E6%B7%86-%E5%9B%9E%E6%BA%AF/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          猿人学第六题js混淆-回溯
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/08/17/%E8%AF%B7%E6%B1%82-%E5%93%8D%E5%BA%94%E5%A4%B4%E4%B8%8D%E5%B8%B8%E8%A7%81%E5%8F%82%E6%95%B0%E5%90%AB%E4%B9%89%E6%80%BB%E7%BB%93/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">请求-响应头不常见参数含义总结</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/16/basketball-reference-web-scraperd%E7%9A%84%E4%BD%BF%E7%94%A8/">basketball_reference_web_scraperd的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/28/%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80%E4%B9%8B%E8%AF%81%E4%B9%A6%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/">爬虫基础之证书身份验证</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/24/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC16%E9%A2%98js%E9%80%86%E5%90%91-window%E8%9C%9C%E7%BD%90/">猿人学第16题js逆向-window蜜罐</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/23/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

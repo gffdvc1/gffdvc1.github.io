@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>字体反爬总结 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="简单入门级字体反爬固定字体编码、固定字体坐标字体反爬网站的类型特征为网站源代码中出现特殊符号或者是繁体字，与网站上显示有很大区别。其中字体文件的都是固定的不发生变化。 相关参数了解：“xMin”、”yMin”、”xMax”和”yMax”是表示字形边界框的参数。边界框定义了字形在给定字体中所占用的矩形区域的范围。在标签下，我们可以看到一系列的标签，每个标签都对应于字形的一个点。每个标签中的”x”和”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字体反爬总结">
+<meta property="og:url" content="http://example.com/2023/08/23/%E5%AD%97%E4%BD%93%E5%8F%8D%E7%88%AC%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="简单入门级字体反爬固定字体编码、固定字体坐标字体反爬网站的类型特征为网站源代码中出现特殊符号或者是繁体字，与网站上显示有很大区别。其中字体文件的都是固定的不发生变化。 相关参数了解：“xMin”、”yMin”、”xMax”和”yMax”是表示字形边界框的参数。边界框定义了字形在给定字体中所占用的矩形区域的范围。在标签下，我们可以看到一系列的标签，每个标签都对应于字形的一个点。每个标签中的”x”和”">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-08-22T23:31:19.000Z">
+<meta property="article:modified_time" content="2023-08-23T05:26:29.646Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-字体反爬总结" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/08/23/%E5%AD%97%E4%BD%93%E5%8F%8D%E7%88%AC%E6%80%BB%E7%BB%93/" class="article-date">
+  <time class="dt-published" datetime="2023-08-22T23:31:19.000Z" itemprop="datePublished">2023-08-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      字体反爬总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="简单入门级字体反爬"><a href="#简单入门级字体反爬" class="headerlink" title="简单入门级字体反爬"></a>简单入门级字体反爬</h1><h2 id="固定字体编码、固定字体坐标"><a href="#固定字体编码、固定字体坐标" class="headerlink" title="固定字体编码、固定字体坐标"></a>固定字体编码、固定字体坐标</h2><p>字体反爬网站的类型特征为网站源代码中出现特殊符号或者是繁体字，与网站上显示有很大区别。其中字体文件的都是固定的不发生变化。</p>
+<p>相关参数了解：<br>“xMin”、”yMin”、”xMax”和”yMax”是表示字形边界框的参数。边界框定义了字形在给定字体中所占用的矩形区域的范围。<br>在<contour>标签下，我们可以看到一系列的<pt>标签，每个标签都对应于字形的一个点。每个<pt>标签中的”x”和”y”属性表示了该点在字形空间内的坐标位置。<br>此外，”on”属性的值为”1”，表明该点是一个标记点或拐角点，而不是一个曲线上的控制点。</p>
+<h3 id="逆向方法"><a href="#逆向方法" class="headerlink" title="逆向方法"></a>逆向方法</h3><ol>
+<li>查找字体文件</li>
+</ol>
+<li>点击F2，打开浏览器工具，在Font面板中功能够发现当前网站加载的字体文件</li>
+<li>在网页源代码中查找如下代码，一般在class属性中。</li>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@font-face &#123;</span><br><span class="line"> font-family: &lt;identifier&gt;; </span><br><span class="line"> src: &lt;fontsrc&gt; [, &lt;fontsrc&gt;]*; &lt;font&gt;;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>下载文件，查看映射表</li>
+</ol>
+<p>使用FontCreator软件直接可以看到字体映射<br><a target="_blank" rel="noopener" href="http://www.fontcreator.com/">直通网址</a>。</p>
+<p>下载字体文件，获取字典映射，如下两种方法</p>
+<pre><code>人工版：只有数字或者少数字符，写出字典映射
+程序版：使用fontTools库中的TTFont类获取映射表
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">newFont = TTFont(&quot;newFont.ttf&quot;)</span><br><span class="line">cmap = newFont.getBestCmap()</span><br><span class="line">print(cmap)#&#123;41604: &#x27;unia284&#x27;, 43159: &#x27;unia897&#x27;, 43345: &#x27;unia951&#x27;,...&#125;</span><br><span class="line">#cmap中键为10进制整数值，一般显示未16进制</span><br><span class="line">cmap_16 = &#123;hex(key):val for key,val in cmap.items()&#125;</span><br><span class="line">print(cmap_16)#&#123;&#x27;0xa284&#x27;: &#x27;unia284&#x27;, &#x27;0xa897&#x27;: &#x27;unia897&#x27;, &#x27;0xa951&#x27;: &#x27;unia951&#x27;,...&#125;</span><br><span class="line">print(chr(0xa284))</span><br></pre></td></tr></table></figure>
+
+<p>unia284是指字体中每个字形（字符的可视表示）的唯一标识符。字形名称是一个字符串，用于在字体文件中标识和引用每个字符的具体外观，但unia284 这个词不是一个有效的 Unicode 字符或编码。Unicode 定义了数千个字符，每个都有一个唯一的代码点或代码位，可以用来表示它。uni是前缀，需要转化为unicode字符码，使用chr方法转换。<br>以 a284 作为 Unicode 码点的字符</p>
+<h2 id="动态字体编码"><a href="#动态字体编码" class="headerlink" title="动态字体编码"></a>动态字体编码</h2><p>从网站上请求两次字体文件，使用以下py代码将下载的ttf文件转化成xml文件，之后观察xml文件，观察每一个字符的x，y坐标信息，x，<br>y以固定的偏移量进行改变。</p>
+<h3 id="逆向方法-1"><a href="#逆向方法-1" class="headerlink" title="逆向方法"></a>逆向方法</h3><ol>
+<li>下载文件，不在详述</li>
+</ol>
+<h4 id="x-y固定偏移量"><a href="#x-y固定偏移量" class="headerlink" title="x,y固定偏移量"></a>x,y固定偏移量</h4><p>观察当前字体文件的偏移量，以其中一个文件（文件A）为已知映射关系，使用coordinates属性来获取字体文件的每一个字符的x，y坐标信息添加到列表中，字体文件的坐标虽然发生变化，但是有固定的偏移量，使用程序判断另一个文件（文件B）的x，y坐标与文件A的对应关系，从而实现新请求下的映射关系表。</p>
+<p>代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">from fontTools.ttLib import TTFont</span><br><span class="line">class Mapping:</span><br><span class="line">    def __init__(self,font_path):</span><br><span class="line">        #本地编辑的已知对应的关系表</span><br><span class="line">        self.uni_ls = [&#x27;unib745&#x27;,&#x27;unia786&#x27;,&#x27;unib859&#x27;,&#x27;unic491&#x27;,&#x27;unia219&#x27;,&#x27;unic732&#x27;,&#x27;unic946&#x27;,&#x27;unic698&#x27;,&#x27;unib639&#x27;,&#x27;unib173&#x27;]</span><br><span class="line">        self.font = TTFont(font_path)</span><br><span class="line">        self.font.saveXML(&#x27;font.xml&#x27;)</span><br><span class="line">    #循环已知字体映射关系的字体文件，获取xy参数对应的列表</span><br><span class="line">    def get_MappingList(self):</span><br><span class="line">        be_p2 = []</span><br><span class="line">        for n in self.uni_ls:</span><br><span class="line">            p2 = []</span><br><span class="line">            p = self.font[&#x27;glyf&#x27;][n].coordinates</span><br><span class="line">            for i in p:</span><br><span class="line">                p2.append(i)</span><br><span class="line">            be_p2.append(p2)</span><br><span class="line">        return be_p2</span><br><span class="line"></span><br><span class="line">    #应对字形名称发生变化，坐标不发生变化的字体反爬，判断字型的xy列表是否相同</span><br><span class="line">    def same(self,ls1,ls2):</span><br><span class="line">        if (len(ls1) != len(ls2)):</span><br><span class="line">            return False</span><br><span class="line">        for idx in range(len(ls1)):</span><br><span class="line">            if (ls1[idx] != ls2[idx]):</span><br><span class="line">                return False</span><br><span class="line">        return True</span><br><span class="line">    #获得新的映射关系字典</span><br><span class="line">    def get_NewMapping(self,uni_k,uni_list):</span><br><span class="line">        dic = &#123;&#125;</span><br><span class="line">        Map = self.get_MappingList()</span><br><span class="line">        # #循环从网站上下载下来的列表</span><br><span class="line">        for p1 in range(len(uni_list)):</span><br><span class="line">            print(uni_list[p1])</span><br><span class="line">            for p2 in range(len(Map)):</span><br><span class="line">                if (self.same(uni_list[p1],Map[p2])):</span><br><span class="line">                    print(Map[p2])</span><br><span class="line">                    dic[uni_k[p1]] = p2</span><br><span class="line">                    break</span><br><span class="line">        return dic</span><br><span class="line">    #得到偏移之后新生成的字体码数组</span><br><span class="line">    def get_offsetNewMapping(self,x,y):</span><br><span class="line">        offsetNewMapping = []</span><br><span class="line">        Map = self.get_MappingList()</span><br><span class="line">        for p2 in Map:</span><br><span class="line">            print(p2)</span><br><span class="line">            alpha = []</span><br><span class="line">            for a in p2:</span><br><span class="line">                alpha.append((a[0]+x,a[1]+y))#相对于已知映射文件传入正负值。</span><br><span class="line">            print(alpha)</span><br><span class="line">            offsetNewMapping.append(alpha)</span><br><span class="line">        return offsetNewMapping</span><br><span class="line"></span><br><span class="line"># if __name__ == &quot;__main__&quot;:</span><br><span class="line">#     mapping = Mapping(&#x27;font.ttf&#x27;)</span><br><span class="line">#     print(mapping.get_offsetNewMapping(1,1))</span><br></pre></td></tr></table></figure>
+
+<h4 id="x-y动态变化"><a href="#x-y动态变化" class="headerlink" title="x,y动态变化"></a>x,y动态变化</h4><p>x，y也发生变化时候，可以通过对比on的值来匹配内容。<br>获取on值的字符串代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">font = TTFont(&#x27;font.ttf&#x27;)</span><br><span class="line">name = font.getGlyphOrder()</span><br><span class="line">dic = &#123;&#125;</span><br><span class="line">str_list = []</span><br><span class="line">for i in name[1:]:</span><br><span class="line">    str_alpha = &quot;&quot;</span><br><span class="line">    p = font[&#x27;glyf&#x27;][i].flags</span><br><span class="line">    for j in p:</span><br><span class="line">        str_alpha += str(j)</span><br><span class="line">    print(str_alpha)</span><br><span class="line">    str_list.append(str_alpha)</span><br></pre></td></tr></table></figure>
+<p>案列：猿人学第七题<a target="_blank" rel="noopener" href="https://match.yuanrenxue.cn/api/match/7">直通网址</a>。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>字体反爬先了解到这。<br>插入一点；<br>ord() 和 chr() 是 Python 中用于字符和字符代码之间相互转换的函数。<br>ord(character) 返回字符 character 的 Unicode 码点（字符代码）。<br>chr(code) 接受一个整数 code（字符代码）并返回对应的字符。<br>总结来说，ord() 用于将字符转换为其对应的整数值，而chr() 用于将整数值转换为其对应的字符。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/08/23/%E5%AD%97%E4%BD%93%E5%8F%8D%E7%88%AC%E6%80%BB%E7%BB%93/" data-id="clmn55i690003y8pnhat88pwg" data-title="字体反爬总结" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/08/23/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/08/21/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC%E5%85%AD%E9%A2%98js%E6%B7%B7%E6%B7%86-%E5%9B%9E%E6%BA%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">猿人学第六题js混淆-回溯</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/16/basketball-reference-web-scraperd%E7%9A%84%E4%BD%BF%E7%94%A8/">basketball_reference_web_scraperd的使用</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/28/%E7%88%AC%E8%99%AB%E5%9F%BA%E7%A1%80%E4%B9%8B%E8%AF%81%E4%B9%A6%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81/">爬虫基础之证书身份验证</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/24/%E7%8C%BF%E4%BA%BA%E5%AD%A6%E7%AC%AC16%E9%A2%98js%E9%80%86%E5%90%91-window%E8%9C%9C%E7%BD%90/">猿人学第16题js逆向-window蜜罐</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/23/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2023/08/23/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
